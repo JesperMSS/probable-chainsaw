@@ -1,0 +1,42 @@
+﻿@model CVSITEHT2021.Models.CV
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>CV</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.education)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.education)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.workplace)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.workplace)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.competances)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.competances)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
